@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createOrphanages1602776830064 = void 0;
 const typeorm_1 = require("typeorm");
 class createOrphanages1602776830064 {
-    
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
             name: 'orphanages',

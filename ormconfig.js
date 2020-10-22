@@ -1,7 +1,9 @@
+const path = __importDefault(require("path"));
 
+export default
 {
     "type": "sqlite",
-    "database": "./dist/database/database.sqlite",
+    "database":`${path.default.join(__dirname,'dist','database', 'database.sqlite')}` ,
     "migrations": [
       "dist/database/migrations/*.js"
     ],
