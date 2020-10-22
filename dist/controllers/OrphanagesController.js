@@ -23,8 +23,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const Orphanage_1 = __importDefault(require("./models/Orphanage"));
-const orphanages_view_1 = __importDefault(require("./views/orphanages_view"));
+const Orphanage_1 = __importDefault(require("../models/Orphanage"));
+const orphanages_view_1 = __importDefault(require("../views/orphanages_view"));
 const Yup = __importStar(require("yup"));
 // query params http://localhost:3333/user?search=sidnei
 // route params http://localhost:3333/user/1   //identificar dado dentro de um recurso (:id - dois pontos usaado para indicar row params)
