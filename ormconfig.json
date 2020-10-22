@@ -9,6 +9,6 @@
       "dist/models/*.js"
     ],
     "cli": {
-      "migrationsDir": "./dist/database/migrations"
+      "migrationsDir": "./src/database/migrations"
     }
   }
