@@ -31,7 +31,7 @@ const Yup = __importStar(require("yup"));
 // body         http://localhost:3333/user   //enviar dados que nao cabem na url
 exports.default = {
     async index(request, response) {
-        const orphanagesRepository = typeorm_1.getRepository(Orphanage_1.default);
+        const orphanagesRepository = typeorm_1.getRepository(Orphanage_1);
         const orphanages = await orphanagesRepository.find({
             relations: ['images']
         });
@@ -39,7 +39,7 @@ exports.default = {
     },
     async show(request, response) {
         const { id } = request.params;
-        const orphanagesRepository = typeorm_1.getRepository(Orphanage_1.default);
+        const orphanagesRepository = typeorm_1.getRepository(Orphanage_1);
         const orphanage = await orphanagesRepository.findOneOrFail(id, {
             relations: ['images']
         });
