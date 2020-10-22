@@ -3,7 +3,7 @@
     "type": "sqlite",
     "database": "dist/database/database.sqlite",
     "migrations": [
-      "../database/migrations/*.js"
+      "dist/database/migrations/*.js"
     ],
     "entities": [
       "dist/models/*.js"
