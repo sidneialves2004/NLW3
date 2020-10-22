@@ -1,0 +1,6 @@
+node_modules/
+.env
+package-lock.json
+/uploads/*.png
+/uploads/*.jpg
+/src/database/migrations
