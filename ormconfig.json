@@ -6,7 +6,7 @@
       "./dist/database/migrations/*.ts"
     ],
     "entities": [
-      "./models/*.js"
+      "./models/*.*"
     ],
     "cli": {
       "migrationsDir": "./dist/database/migrations"
