@@ -35,7 +35,7 @@ exports.default = {
         const orphanages = await orphanagesRepository.find({
             relations: ['images']
         });
-        return response.json(orphanages_view_1.default.renderMany(orphanages));
+        return response.json(orphanages_view_1.renderMany(orphanages));
     },
     async show(request, response) {
         const { id } = request.params;
@@ -43,7 +43,7 @@ exports.default = {
         const orphanage = await orphanagesRepository.findOneOrFail(id, {
             relations: ['images']
         });
-        return response.json(orphanages_view_1.default.render(orphanage));
+        return response.json(orphanages_view_1.render(orphanage));
     },
     async create(request, response) {
         const { name, latitude, longitude, about, instructions, opening_hours, open_on_weekends } = request.body;
@@ -76,7 +76,7 @@ exports.default = {
         await schema.validate(data, {
             abortEarly: false,
         });
-        const orphanagesRepository = typeorm_1.getRepository(Orphanage_1.default);
+        const orphanagesRepository = typeorm_1.getRepository(Orphanage_1);
         const orphanage = orphanagesRepository.create(data);
         await orphanagesRepository.save(orphanage);
         return response.status(201).json(orphanage);
