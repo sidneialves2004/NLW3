@@ -1,6 +1,6 @@
 const path = __importDefault(require("path"));
 
-export default
+module.exports =
 {
     "type": "sqlite",
     "database":`${path.default.join(__dirname,'dist','database', 'database.sqlite')}` ,
