@@ -1,7 +1,7 @@
 
 {
     "type": "sqlite",
-    "database": "database/database.sqlite",
+    "database": "dist/database/database.sqlite",
     "migrations": [
       "../database/migrations/*.js"
     ],
