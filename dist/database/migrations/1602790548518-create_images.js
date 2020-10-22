@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createImages1602790548518 = void 0;
 const typeorm_1 = require("typeorm");
 class createImages1602790548518 {
-    
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
             name: 'images',
