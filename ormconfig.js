@@ -7,6 +7,7 @@ module.exports =
 {
     "type": "sqlite",
     "database":`${path.default.join(__dirname,'dist','database')}/database.sqlite` ,
+    "useNullAsDefault": true,
     "migrations": [
       "dist/database/migrations/*.js"
     ],
