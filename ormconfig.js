@@ -2,10 +2,11 @@ const path = __importDefault(require("path"));
 
 console.log(`${path.default.join(__dirname,'dist','database', )}/database.sqlite`)
 
+
 module.exports =
 {
     "type": "sqlite",
-    "database":`${path.default.join(__dirname,'dist','database', )}/database.sqlite` ,
+    "database":`${path.default.join(__dirname,'distAA','database', )}/database.sqlite` ,
     "migrations": [
       "dist/database/migrations/*.js"
     ],
